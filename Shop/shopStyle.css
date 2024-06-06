@@ -1,0 +1,172 @@
+
+.row-flex{
+  display: flex;
+}
+
+
+.column-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:50px; 
+}
+
+
+/* shop image section */
+.shop-img-section {
+    height: 50vh;
+    background-image: url(../img/shopImg.png);
+    background-size: cover;
+    /* background-color: blue; */
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.shop-text{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.shop-text h2{
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.home-shop h4{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+/* font weight is not working
+ */
+
+#shop{
+  font-size: 16px;
+  font-weight: 200;
+  
+  color:var(--text-color)
+}
+
+
+.home-shop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* items section */
+
+.items-section{
+  display: flex;
+  
+}
+
+
+/* filtering items */
+.filter-sort-con {
+  justify-content: space-around;
+  background-color: var(--secondary-color);
+  padding: 10px 0px; 
+  align-items: center;
+}
+
+.filter-con, .filter,.sort-con {
+  gap:30px;
+  
+}
+
+.filter h3, .sort-con h3{
+  font-size: 20px;
+  font-weight: 300;
+  
+}
+
+.filter-con h3{
+  font-size: 16px;
+  font-weight: 200;
+}
+
+
+.sort-con span, #sort {
+  font-size: 16px;
+  background-color: var(--white-bg);
+  padding:5px 20px ; 
+  font-weight: 100;
+}
+/* sort does't effect the font weight..  */
+
+
+
+
+/* make the card more responsive */
+
+.items-con{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+  padding:0px 185px;
+  gap:20px;
+}
+
+
+
+
+
+/* next page btn */
+
+.next-icons-con {
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+}
+
+.next-icons-con input {
+
+  padding:15px 20px;
+  background-color: var(--secondary-color);
+  
+}
+
+.next-icons-con input:first-child {
+  background-color: var(--primary-color);
+}
+
+
+/* service section */
+
+.service-section{
+  justify-content: space-around;
+  margin: 50px 0px;
+
+  padding:100px 0px;
+  background-color: var(--secondary-color);
+}
+
+.service-section div{
+  gap:10px;
+}
+.service-section h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+.service-section h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+
+

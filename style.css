@@ -1,0 +1,464 @@
+
+.con-with-padding{
+  width:81%;
+  margin: 100px auto ; 
+}
+
+
+
+/* hero Section */
+
+.hero-section {
+  background-image: url(./img/hero-bg.jpg);
+  height: 716px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  /* background-repeat: no-repeat; */
+}
+
+.hero-text-con {
+  width: 643px;
+  gap: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: var(--third-color);
+
+  padding: 30px 40px;
+  border-radius: 10px;
+
+  margin-right: 60px;
+}
+
+.hero-text-con span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  
+}
+
+.hero-text-con h1 {
+  font-size: 52px;
+  font-weight: 700;
+  
+  color: var(--primary-color);
+  line-height: 110%;
+}
+
+.hero-text-con h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.buy-btn {
+  background-color: var(--primary-color);
+  padding: 25px 72px;
+}
+
+/* browse section  */
+.browse-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+
+}
+
+.browse-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.browse-text h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.browse-text h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--drop-down);
+}
+
+.browse-img {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.img-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-card h3 {
+  font-size: 24px;
+  font-weight: 600px;
+  color: var(--text-color);
+}
+
+/* products section  */
+
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  
+}
+.product-section h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.product-cards-con {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  flex-basis: 285px;
+
+  overflow: hidden;
+  position: relative;
+
+  background-color: var(--card-bg);
+}
+
+/* ---------- */
+.card-img {
+  width: 100%;
+}
+
+.badge {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white-bg);
+
+  width: 45px;
+  height: 45px;
+  background-color: var(--dis-color);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.no-discount {
+  display: none;
+}
+
+/* for new badge */
+
+.badge.new {
+  background-color: var(--new-color);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+
+  padding-bottom: 25px;
+}
+
+.card-body h4 {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+
+
+
+}
+
+.card-body h6 {
+  font-size: 16px;
+  font-weight: 300;
+
+  color:var(--text-plain);
+
+  
+  line-height: 150%;
+
+  
+
+
+}
+
+.product-card .card-body .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price p {
+  color: var(--text-plain);
+  font-size: 16px;
+}
+
+.price p:first-child {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 20px;
+
+
+}
+
+.price p:last-child {
+  text-decoration: line-through;
+}
+
+/* card hovering */
+
+/* hover card */
+.card-hover {
+  background-color: rgba(102, 102, 102, 0.8);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  gap: 25px;
+
+  position: absolute;
+
+  /*     
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+
+  /* the same as below  */
+  inset: 0;
+
+  transform: translateY(-100%);
+  transition: 0.5s ease-in;
+
+  opacity: 0;
+
+  /* while hovering the card will drop down from top and opacity 0 mean,... start with transparant and end with full color . */
+}
+
+.add-to-cart-btn {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 50px;
+  cursor: pointer;
+  background-color: var(--white-bg);
+}
+
+.icons-con {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.icon-item h5 {
+  color: var(--white-bg);
+  font-size: 16px;
+}
+
+/* while hovering */
+
+.product-card:hover .card-hover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Show more button  */
+
+.show-more-btn {
+  font-size: 16px;
+  font-weight: 500;
+  color:var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 15px 80px;
+}
+
+
+
+/* beautiful section */
+
+.beautiful-inspo-section{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--third-color);
+
+  gap:40px;
+
+
+
+}
+
+
+/* left ... text  */
+
+.inspo-text-con{
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  align-items: flex-start;
+  justify-content: center;
+  gap:25px; 
+  width: 40%;
+  
+  
+}
+
+.inspo-text{
+  gap:10px; 
+}
+
+
+.inspo-text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color:var(--text-color); 
+}
+
+
+.inspo-text h5{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+
+.explore-more-btn {
+  padding:15px 40px;
+  background-color: var(--primary-color);
+  color:var(--white-bg);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
+/* right image  */
+
+.inspo-imgs-con {
+  display: flex;
+  gap:24px;
+}
+
+
+.inspo-img-big {
+  position: relative;
+}
+
+.floating{
+  position: absolute;
+  bottom:30px; 
+  left: 50px;
+
+
+  display: flex;
+  align-items:end;
+
+  
+}
+
+
+.inner-text-div{
+  background-color: var(--white-bg);
+  padding:25px;
+}
+
+
+.inner-text-div div {
+  display: flex;
+  gap:10px; 
+  align-items: center;
+  color:var(--text-plain); 
+  font-size: 16px;
+  font-weight: 400;
+  
+  line-height: 150%;
+}
+
+.inner-text-div h4{
+  font-size: 28px;
+  font-weight: 500;
+  color:var(--text-color); 
+  line-height: 120%;
+}
+
+
+
+.slide-img {
+  position: relative;
+  display: flex;
+  gap:25px; 
+}
+.arrow-ic {
+  position:absolute;
+  right: 10%; 
+  bottom:40%;
+  
+}
+
+
+/* To change the radio button  */
+.inspo-img-small input {
+  /* accent-color: #d36408; */
+
+  accent-color: var(--primary-color);
+}
+
+
+
+/* Shared image section */
+
+.shared-img-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin:100px 0px; 
+  
+
+}
+
+.shared-img-section h3{
+  font-size: 20px;
+  font-weight: 400;
+  color:var(--text-plain); 
+}
+
+.shared-img-section h1{
+  font-size: 40px;
+  font-weight: 700;
+  color:var(--text-color); 
+}
+

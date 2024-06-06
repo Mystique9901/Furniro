@@ -1,0 +1,344 @@
+/* poppine font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --primary-color:#B88E2F; 
+  --secondary-color: #F9F1E7; 
+  --third-color: #FFF3E3; 
+  --dis-color:#E97171;
+  --new-color: #2EC1AC; 
+  --drop-color:#666666; 
+  --text-color:#333333;
+  --text-plain:#b0b0b0; 
+  --white-bg : #FFFFFF; 
+  --card-bg: #F4F5F7; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--white-bg);
+  color:var(--text-color)
+
+  /* no scrollable in x ..  */
+}
+/* navigation  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 55px;
+  /* background-color: var(--white-bg); */
+}
+
+nav ul {
+  display: flex;
+  gap: 75px;
+}
+
+nav ul a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+nav ul a:hover {
+  font-weight: 700;
+}
+
+.nav-ic-con {
+  display: flex;
+  gap: 50px;
+}
+
+
+
+
+/* products card */
+/* 
+.con-with-padding{
+  width:81%;
+  margin: 100px auto ; 
+} */
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  /* flex: 1;
+  flex-basis: 285px; */
+
+
+  overflow: hidden;
+  position: relative;
+
+  background-color: var(--card-bg);
+}
+
+/* ---------- */
+.card-img {
+  width: 100%;
+}
+
+.badge {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white-bg);
+
+  width: 45px;
+  height: 45px;
+  background-color: var(--dis-color);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.no-discount {
+  display: none;
+}
+
+/* for new badge */
+
+.badge.new {
+  background-color: var(--new-color);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+
+  padding-bottom: 25px;
+}
+
+.card-body h4 {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+
+
+
+}
+
+.card-body h6 {
+  font-size: 16px;
+  font-weight: 300;
+
+  color:var(--text-plain);
+
+  
+  line-height: 150%;
+
+  
+
+
+}
+
+.product-card .card-body .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price p {
+  color: var(--text-plain);
+  font-size: 16px;
+}
+
+.price p:first-child {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 20px;
+
+
+}
+
+.price p:last-child {
+  text-decoration: line-through;
+}
+
+/* card hovering */
+
+/* hover card */
+.card-hover {
+  background-color: rgba(102, 102, 102, 0.8);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  gap: 25px;
+
+  position: absolute;
+
+  /*     
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+
+  /* the same as below  */
+  inset: 0;
+
+  transform: translateY(-100%);
+  transition: 0.5s ease-in;
+
+  opacity: 0;
+
+  /* while hovering the card will drop down from top and opacity 0 mean,... start with transparant and end with full color . */
+}
+
+.add-to-cart-btn {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 50px;
+  cursor: pointer;
+  background-color: var(--white-bg);
+}
+
+.icons-con {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.icon-item h5 {
+  color: var(--white-bg);
+  font-size: 16px;
+}
+
+/* while hovering */
+
+.product-card:hover .card-hover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER SECTION */
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap:50px; 
+
+}
+
+.footer-link{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-funiro-con, .links-con, .help-con, .newsletter-con{
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+  
+}
+
+
+.about-funiro-con h3{
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.about-funiro-con p{
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-plain);
+
+  
+}
+
+
+.links-con h3, .help-con h3, .newsletter-con h3{
+
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-plain);
+ 
+}
+
+
+.links-con a, .help-con a, .newsletter-con a{
+
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+
+.footer-section hr {
+  border:1px solid rgba(0, 0, 0, 0.181); 
+  width: 100%;
+}
+
+.copyright {
+  font-size: 16px;
+  font-weight: 200;
+  color: var(--text-color);
+}
+
+.newsletter-con input{
+
+  border-bottom: 1px solid var(--text-color);
+ 
+}
+.newsletter-con input:first-child , .newsletter-con input:last-child {
+  color:var(--text-color);
+  font-size: 16px;
+  
+}
+
+
+
+.subscribe {
+  display: flex;
+  gap:20px; 
+}
