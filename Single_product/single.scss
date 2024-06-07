@@ -1,0 +1,261 @@
+@mixin flex-row(){
+    display: flex;
+    flex-direction: row;
+}
+
+
+@mixin flex-column(){
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.product-location {
+
+    @include flex-row() ; 
+
+    padding : 40px 100px; 
+    gap:25px; 
+    
+
+
+    background-color: var(--primary-color);
+
+
+    .home-track , .shop-track , .product-track {
+        @include flex-row() ;
+
+        
+
+        align-items: center;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 300;
+            
+        }
+
+
+       
+    }
+
+    // divider 
+
+    hr{
+       height: 100%;
+        
+        border: 1px black solid;
+        margin-right: 35px;
+    }
+
+}
+
+
+
+
+// a product 
+
+.product {
+    @include flex-row(); 
+
+    padding : 40px 100px; 
+
+    gap:80px; 
+
+
+    .product-image-container {
+        @include flex-row(); 
+
+
+        .product-choices {
+            @include flex-column(); 
+            gap:30px; 
+        }
+    }
+
+
+
+    .product-detail-container{
+
+
+
+    .product-info{
+
+
+        .rating {
+            @include flex-row(); 
+
+            gap:20px;
+            align-items: center;
+            padding: 15px 0px;
+
+
+
+          
+
+
+             .total-review {
+                border-left: 1px black solid;
+                padding :0px 22px ; 
+
+
+                h6 , span {
+                    font-size: 13px;
+                    font-weight: 100;
+                }
+
+             }
+        }
+
+        h2{
+            font-weight: 500;
+        }
+
+        h4{
+            color:var(--text-plain); 
+        }
+
+        .product-short-des p{
+            font-weight: 500;
+        }
+
+    }
+
+
+    .customize-product{
+
+        @include flex-column(); 
+        gap:30px;
+
+        .size-container{
+            h3{
+                color:var(--text-plain);
+            }
+
+            .size-choosing {
+                @include flex-row(); 
+                gap:20px;
+            }
+
+
+            .size{
+                padding: 5px 15px;
+                border: 1px var(--text-plain) solid;
+
+                border-radius: 5px;
+                background-color: var(--secondary-color);
+            }
+
+            .size:first-child{
+                background-color: var(--primary-color);
+            }
+        }
+
+
+
+        .color-container{
+
+            h3{
+                color:var(--text-plain);
+            }
+
+            .color-choosing {
+                @include flex-row(); 
+                gap:25px;
+            }
+
+
+            .color{
+               width: 30px;
+               height: 30px;
+               background-color: black;
+               border-radius: 20px;
+            }
+
+
+            .color:first-child{
+                background-color: purple;
+            }
+
+            .color:last-child{
+                background-color: var(--primary-color);
+            }
+        }
+
+        .size-container , .color-container {
+           @include flex-column(); 
+           gap:15px; 
+        }
+
+
+        .add-cart-container {
+            @include flex-row(); 
+            align-items: center;
+            gap:15px; 
+
+
+            .quantity{
+                @include flex-row(); 
+                gap:50px; 
+                padding:20px 15px; 
+
+                border: 1px var(--text-plain) solid; 
+                border-radius: 15px;
+
+                
+            }
+
+
+            .add-cart-btn , .compare-btn{
+                gap:50px; 
+                padding:20px 15px; 
+
+                border: 1px var(--text-plain) solid; 
+                border-radius: 15px;
+
+                
+
+            }
+
+
+            .compare-btn {
+                @include flex-row(); 
+                gap:10px; 
+                
+
+                h4{
+                    font-weight: 400;
+                }
+            }
+
+        }
+
+    }
+
+
+    .product-social{
+
+        
+
+
+        .list-con {
+            @include flex-row(); 
+            gap:30px; 
+            align-items: center;
+           
+
+        h3{
+            font-weight: 200;
+        }
+
+
+            .list-name {
+                @include flex-row(); 
+                gap:20px; 
+                align-items: center;
+            }
+        }
+    }
+    }
+}

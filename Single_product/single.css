@@ -1,1 +1,151 @@
-/*# sourceMappingURL=single.css.map */
+.product-location {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 100px;
+  gap: 25px;
+  background-color: var(--primary-color);
+}
+.product-location .home-track, .product-location .shop-track, .product-location .product-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.product-location .home-track h3, .product-location .shop-track h3, .product-location .product-track h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.product-location hr {
+  height: 100%;
+  border: 1px black solid;
+  margin-right: 35px;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 100px;
+  gap: 80px;
+}
+.product .product-image-container {
+  display: flex;
+  flex-direction: row;
+}
+.product .product-image-container .product-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.product .product-detail-container .product-info .rating {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  padding: 15px 0px;
+}
+.product .product-detail-container .product-info .rating .total-review {
+  border-left: 1px black solid;
+  padding: 0px 22px;
+}
+.product .product-detail-container .product-info .rating .total-review h6, .product .product-detail-container .product-info .rating .total-review span {
+  font-size: 13px;
+  font-weight: 100;
+}
+.product .product-detail-container .product-info h2 {
+  font-weight: 500;
+}
+.product .product-detail-container .product-info h4 {
+  color: var(--text-plain);
+}
+.product .product-detail-container .product-info .product-short-des p {
+  font-weight: 500;
+}
+.product .product-detail-container .customize-product {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.product .product-detail-container .customize-product .size-container h3 {
+  color: var(--text-plain);
+}
+.product .product-detail-container .customize-product .size-container .size-choosing {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.product .product-detail-container .customize-product .size-container .size {
+  padding: 5px 15px;
+  border: 1px var(--text-plain) solid;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
+.product .product-detail-container .customize-product .size-container .size:first-child {
+  background-color: var(--primary-color);
+}
+.product .product-detail-container .customize-product .color-container h3 {
+  color: var(--text-plain);
+}
+.product .product-detail-container .customize-product .color-container .color-choosing {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.product .product-detail-container .customize-product .color-container .color {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 20px;
+}
+.product .product-detail-container .customize-product .color-container .color:first-child {
+  background-color: purple;
+}
+.product .product-detail-container .customize-product .color-container .color:last-child {
+  background-color: var(--primary-color);
+}
+.product .product-detail-container .customize-product .size-container, .product .product-detail-container .customize-product .color-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.product .product-detail-container .customize-product .add-cart-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.product .product-detail-container .customize-product .add-cart-container .quantity {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 20px 15px;
+  border: 1px var(--text-plain) solid;
+  border-radius: 15px;
+}
+.product .product-detail-container .customize-product .add-cart-container .add-cart-btn, .product .product-detail-container .customize-product .add-cart-container .compare-btn {
+  gap: 50px;
+  padding: 20px 15px;
+  border: 1px var(--text-plain) solid;
+  border-radius: 15px;
+}
+.product .product-detail-container .customize-product .add-cart-container .compare-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.product .product-detail-container .customize-product .add-cart-container .compare-btn h4 {
+  font-weight: 400;
+}
+.product .product-detail-container .product-social .list-con {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+.product .product-detail-container .product-social .list-con h3 {
+  font-weight: 200;
+}
+.product .product-detail-container .product-social .list-con .list-name {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}/*# sourceMappingURL=single.css.map */
