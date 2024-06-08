@@ -234,28 +234,6 @@
     }
 
 
-    .product-social{
-
-        
-
-
-        .list-con {
-            @include flex-row(); 
-            gap:30px; 
-            align-items: center;
-           
-
-        h3{
-            font-weight: 200;
-        }
-
-
-            .list-name {
-                @include flex-row(); 
-                gap:20px; 
-                align-items: center;
-            }
-        }
-    }
+   
     }
 }

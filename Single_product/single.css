@@ -133,19 +133,4 @@
 }
 .product .product-detail-container .customize-product .add-cart-container .compare-btn h4 {
   font-weight: 400;
-}
-.product .product-detail-container .product-social .list-con {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
-}
-.product .product-detail-container .product-social .list-con h3 {
-  font-weight: 200;
-}
-.product .product-detail-container .product-social .list-con .list-name {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
 }/*# sourceMappingURL=single.css.map */
