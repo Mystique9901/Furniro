@@ -34,7 +34,22 @@ body {
 
   /* no scrollable in x ..  */
 }
-/* navigation  */
+
+.flex-row , .flex-column{
+  display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+/* navigation 1 */
 
 nav {
   display: flex;
@@ -42,6 +57,8 @@ nav {
   align-items: center;
 
   padding: 30px 55px;
+
+  /* to add padding later  */
   /* background-color: var(--white-bg); */
 }
 
@@ -312,6 +329,33 @@ nav ul a:hover {
 }
 
 
+/* navigation 2 for tablet and phone */
+.nav2{
+  display: none;
+  justify-content: space-between;
+  padding: 30px 55px;
+}
+
+.nav2 .logo{
+  height: 50px;
+}
+
+
+.nav2 .search-bar{
+  border:1px black solid;
+  width: 30%;
+  height: 50px;
+  align-items: center;
+  gap:20px;
+  border-radius: 10px;
+  padding:10px;
+
+  
+}
+
+.search-bar h3 {
+  color: var(--text-plain);
+}
 
 
 
@@ -410,4 +454,146 @@ nav ul a:hover {
 .subscribe {
   display: flex;
   gap:20px; 
+}
+
+
+
+
+
+/* humbarger */
+
+
+a{
+  color:black;
+  text-decoration: none;
+}
+
+.menu-bar, #navbar{
+  height: 50px;
+}
+
+#navbar{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 0px;
+
+}
+
+.hamburger1 div {
+background-color: rgb(61, 61, 61);
+/* position: relative; */
+width: 40px;
+height: 5px;
+margin-top: 7px;
+
+
+transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+
+transform: rotate(-45deg);
+margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+
+transform: rotate(45deg);
+margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+
+transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+height: 600px;
+}
+
+
+
+
+
+
+/* Menu */
+.menu1 {
+width: 100%;
+position: absolute;
+right:0;
+top: 110px;
+margin: 0;
+display: flex;
+flex-direction: column;
+
+padding: 0px 20px;
+list-style: none;
+clear: both;
+
+width: 30%;
+
+/* i wish to change another color */
+background-color: rgb(160, 160, 160);
+text-align:left;
+height: 0px;
+overflow: hidden;
+transition: height .4s ease;
+z-index: 120;
+
+
+transition: all 0.3s ease;
+}
+
+.menu1 a:first-child {
+margin-top: 40px;
+}
+
+.menu1 a:last-child {
+margin-bottom: 40px;
+}
+
+.link {
+width: 100%;
+margin: 0;
+padding: 10px 0;
+font: 700 20px 'Oswald', sans-serif;
+
+}
+
+.icon{
+display: flex;
+gap:20px;
+align-items: center;
+}
+
+.pad{
+padding-left: 48px;
+}
+
+.link:hover {
+background-color: #fff;
+color: rgb(61, 61, 61);
+
+transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1008px) {
+  .nav2 {
+    display: flex;
+  }
+  .nav1{
+    display: none;
+  }
 }
