@@ -1,0 +1,151 @@
+
+@mixin flex-row(){
+    display: flex;
+    flex-direction: row;
+}
+
+
+@mixin flex-column(){
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.product-location{
+    background-image: url(../img/product_compare_bg.png);
+
+   @include flex-column();
+    align-items: center;
+    padding: 20px 0px; 
+    
+
+    .location{
+        @include flex-row(); 
+        align-items: center;
+        gap:10px; 
+    }
+
+    h2, h4 {
+        font-weight: 400;
+    }
+}
+
+
+
+.compare-products-section {
+
+    table {
+        width: 100%;
+        padding:50px 100px;
+        text-align: left;
+        
+
+
+        .product-page , .add-product {
+            vertical-align: top;
+            
+        }
+
+
+        .add-product {
+            padding :30px; 
+        }
+
+
+        td, th {
+            width: 25%;
+            padding:10px; 
+            font-size: 20px;
+            
+        }
+       
+        // header
+
+        th label , th h2 , td h2  {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        th h2{
+            font-size: 28px;
+            
+        }
+
+        th , td {
+            vertical-align: top;
+        }
+
+        td h2{
+            font-size: 20px;
+            
+            
+        }
+
+        // view more link
+
+        a {
+            color:var(--text-plain);
+            text-decoration: underline; 
+            
+        }
+
+
+        td h3 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        td h4 , td h5 {
+            font-size: 18px;
+            font-weight: 500;
+            padding:3px 0px; 
+        }
+
+
+        .product-rating {
+            @include flex-row();
+            align-items: center;
+            gap:10px; 
+
+
+            .review-total {
+                border-left: 1px var(--text-plain) solid;
+                padding : 0px 10px; 
+            }
+        }
+
+
+        .choose-product-with-dropdown {
+            background-color: var(--primary-color); 
+            @include flex-row(); 
+            justify-content: space-between;
+            color:white; 
+            align-items: center;
+            padding: 10px 20px; 
+            border-radius: 10px;
+            
+
+        }
+
+
+        .add-cart-btn {
+            background-color: var(--primary-color);
+            padding:15px;  
+            border-radius: 5px;
+            width: 70%;
+            text-align: center;
+            color: white;
+        }
+
+
+        
+
+        
+
+
+    }
+
+  
+}

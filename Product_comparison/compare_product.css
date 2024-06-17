@@ -1,0 +1,88 @@
+.product-location {
+  background-image: url(../img/product_compare_bg.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+.product-location .location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.product-location h2, .product-location h4 {
+  font-weight: 400;
+}
+
+.compare-products-section table {
+  width: 100%;
+  padding: 50px 100px;
+  text-align: left;
+}
+.compare-products-section table .product-page, .compare-products-section table .add-product {
+  vertical-align: top;
+}
+.compare-products-section table .add-product {
+  padding: 30px;
+}
+.compare-products-section table td, .compare-products-section table th {
+  width: 25%;
+  padding: 10px;
+  font-size: 20px;
+}
+.compare-products-section table th label, .compare-products-section table th h2, .compare-products-section table td h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.compare-products-section table th h2 {
+  font-size: 28px;
+}
+.compare-products-section table th, .compare-products-section table td {
+  vertical-align: top;
+}
+.compare-products-section table td h2 {
+  font-size: 20px;
+}
+.compare-products-section table a {
+  color: var(--text-plain);
+  text-decoration: underline;
+}
+.compare-products-section table td h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.compare-products-section table td h4, .compare-products-section table td h5 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 3px 0px;
+}
+.compare-products-section table .product-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.compare-products-section table .product-rating .review-total {
+  border-left: 1px var(--text-plain) solid;
+  padding: 0px 10px;
+}
+.compare-products-section table .choose-product-with-dropdown {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.compare-products-section table .add-cart-btn {
+  background-color: var(--primary-color);
+  padding: 15px;
+  border-radius: 5px;
+  width: 70%;
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=compare_product.css.map */

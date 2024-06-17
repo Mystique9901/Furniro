@@ -22,7 +22,11 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-weight: normal;
 }
+
+
+
 
 
 body {
@@ -357,7 +361,59 @@ nav ul a:hover {
   color: var(--text-plain);
 }
 
+/* navigation 2 for tablet and phone */
+.nav2{
+  display: none;
+  justify-content: space-between;
+  padding: 30px 55px;
+}
 
+.nav2 .logo{
+  height: 50px;
+}
+
+
+.nav2 .search-bar{
+  border:1px black solid;
+  width: 30%;
+  height: 50px;
+  align-items: center;
+  gap:20px;
+  border-radius: 10px;
+  padding:10px;
+
+  
+}
+
+.search-bar h3 {
+  color: var(--text-plain);
+}
+
+/* service section */
+
+
+.service-section{
+  justify-content: space-around;
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: row;
+  padding:100px 0px;
+  background-color: var(--secondary-color);
+}
+
+.service-section div{
+  gap:10px;
+}
+.service-section h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+.service-section h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
 
 
 
