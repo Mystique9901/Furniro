@@ -30,6 +30,7 @@ body {
   overflow-x: hidden;
   background-color: var(--white-bg);
   color:var(--text-color)
+  
 
   /* no scrollable in x ..  */
 }
@@ -309,6 +310,7 @@ nav ul a:hover {
   transform: translateY(0);
   opacity: 1;
 }
+
 
 
 

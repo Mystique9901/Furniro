@@ -103,6 +103,8 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
+  max-width: 200px;
 }
 
 .img-card h3 {
@@ -130,14 +132,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+ 
+  justify-content: center;
 }
 
 .product-card {
   display: flex;
   flex-direction: column;
 
-  flex: 1;
-  flex-basis: 285px;
+  /* flex: 1;
+  flex-basis: 285px; */
 
   overflow: hidden;
   position: relative;
@@ -147,7 +151,7 @@
 
 /* ---------- */
 .card-img {
-  width: 100%;
+ max-width: 100%;
 }
 
 .badge {
@@ -375,12 +379,30 @@
 .inspo-imgs-con {
   display: flex;
   gap:24px;
+  /* max-width: 70%; */
 }
 
+
+.inspo-imgs-con img{
+  max-width: 100%;
+}
+
+
+
+/* #img-big{
+  max-width: 100%;
+} */
+
+.img-big img, .img-small img{
+  max-height: 100%;
+}
 
 .inspo-img-big {
   position: relative;
+  /* max-width: 40%; */
 }
+
+
 
 .floating{
   position: absolute;
@@ -467,3 +489,7 @@
   color:var(--text-color); 
 }
 
+
+.shared-img-section img{
+  max-width: 100%;
+}

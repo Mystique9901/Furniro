@@ -110,7 +110,7 @@
 
 /* make the card more responsive */
 
-.items-con{
+/* .items-con{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -118,7 +118,15 @@
   padding:0px 185px;
   gap:20px;
 }
+ */
 
+
+ .items-con{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:30px;
+ }
 
 
 

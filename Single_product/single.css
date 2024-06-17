@@ -194,11 +194,9 @@
 }
 .relation-section .product-cards-con {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
-}
-.relation-section .product-cards-con .product-card {
-  flex-grow: 1;
+  justify-content: center;
 }
 .relation-section .show-more-btn {
   font-size: 16px;

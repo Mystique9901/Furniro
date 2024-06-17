@@ -60,6 +60,7 @@
     @include flex-row(); 
 
     padding : 40px 100px; 
+   
 
     gap:80px; 
 
@@ -315,13 +316,16 @@
 
 
     .product-cards-con {
-        @include flex-row(); 
+        // @include flex-row(); 
+        display: flex;
+        flex-wrap: wrap;
         gap:20px; 
+        justify-content:center;
        
 
-        .product-card{
-            flex-grow: 1;
-        }
+        // .product-card{
+        //     flex-grow: 1;
+        // }
     }
 
     .show-more-btn {
