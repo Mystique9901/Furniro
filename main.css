@@ -82,13 +82,55 @@ nav ul a:hover {
 
 /* shopping cart slider hidden */
 
+.cart-page,
+.menu2 {
+  height: 40px;
+}
+.menu2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 0px;
+}
+.cart-page {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 0px;
+}
+
+#toggle-cart {
+  display: none;
+}
+
+#toggle-cart:checked ~ .cart-slider {
+  height: 600px;
+}
+
 .cart-slider {
+  width: 30%;
   position: absolute;
   display: flex;
   flex-direction: column;
-  right: 0;
+  right: 0px;
+  top: 76px;
   background-color: white;
-  padding: 15px 30px;
+  padding: 8px 30px;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  /* background-color: rgb(27, 24, 217); */
+
+  transition: all 0.3s ease;
+}
+
+.cart-ic {
+  transition: all 0.2s ease-in-out;
 }
 
 .item,
@@ -140,12 +182,11 @@ nav ul a:hover {
   padding: 5px 20px;
 }
 
+/* product section  */
+
 .product-card {
   display: flex;
   flex-direction: column;
-
-  /* flex: 1;
-  flex-basis: 285px; */
 
   overflow: hidden;
   position: relative;
@@ -478,7 +519,6 @@ a {
 
 /* Menu */
 .menu1 {
-  width: 100%;
   position: absolute;
   right: 0;
   top: 110px;
