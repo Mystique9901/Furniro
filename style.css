@@ -94,6 +94,7 @@
 .browse-img {
   display: flex;
   justify-content: space-between;
+  gap:30px;
 
 
 }
@@ -104,7 +105,17 @@
   align-items: center;
   gap: 10px;
 
-  max-width: 200px;
+  flex-grow: 1;
+  
+  
+ 
+}
+
+
+
+
+.div-img img {
+  width: 100%;
 }
 
 .img-card h3 {
@@ -379,7 +390,7 @@
 .inspo-imgs-con {
   display: flex;
   gap:24px;
-  /* max-width: 70%; */
+  max-width: 70%;
 }
 
 
@@ -399,7 +410,7 @@
 
 .inspo-img-big {
   position: relative;
-  /* max-width: 40%; */
+  
 }
 
 
@@ -492,4 +503,58 @@
 
 .shared-img-section img{
   max-width: 100%;
+}
+
+
+
+
+/* tablet */
+
+
+@media only screen and (max-width: 1008px) {
+
+  .inspo-text-con {
+    padding-left: 50px;
+  }
+
+  .inspo-text-con h3{
+    font-size: 25px;
+  }
+  .inspo-img-big img{
+    width: 100%;
+    height: 100%;
+  }
+
+  
+}
+
+
+
+@media only screen and (max-width: 640px) {
+  .inspo-text h3 {
+    font-size: 20px;
+  }
+  .inspo-text h5{
+    font-size: 10px;
+  }
+  .inspo-text-con {
+    padding-left: 50px;
+  }
+  .explore-more-btn {
+    padding : 8px 15px; 
+    font-size: 10px;
+  }
+
+  .floating {
+    bottom: 15px;
+  
+  }
+
+  .inner-text-div {
+    padding : 10px; 
+  }
+
+  .inner-text-div h4 {
+    font-size: 15px;
+  }
 }
