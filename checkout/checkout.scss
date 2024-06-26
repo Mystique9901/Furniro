@@ -1,0 +1,29 @@
+@mixin flex-row(){
+    display: flex;
+    flex-direction: row;
+}
+
+
+@mixin flex-column(){
+    display: flex;
+    flex-direction: column;
+}
+
+.product-location{
+    background-image: url(../img/product_compare_bg.png);
+
+   @include flex-column();
+    align-items: center;
+    padding: 20px 0px; 
+    
+
+    .location{
+        @include flex-row(); 
+        align-items: center;
+        gap:10px; 
+    }
+
+    h2, h4 {
+        font-weight: 400;
+    }
+}
