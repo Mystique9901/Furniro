@@ -321,10 +321,16 @@
 
         <!-- name -->
         <div class="form">
-          <label for="first-name">First Name</label>
+          <div class="first-class">
+            <label for="first-name">First Name</label>
           <input type="text" id="first-name" />
+          </div>
+          <div class="last-class">
+            
           <label for="last-name">Last Name</label>
           <input type="text" id="last-name" />
+          </div>
+          
         </div>
   
         <!-- company  -->
@@ -380,8 +386,8 @@
       <div class="place-order">
         <table>
           <tr>
-            <th>Product</th>
-            <th>Subtotal</th>
+            <th class="title">Product</th>
+            <th class="title">Subtotal</th>
           </tr>
           <tr>
             <td><div class="product">
@@ -394,13 +400,13 @@
             <td>Rs. 250,000.00</td>
           </tr>
           <tr>
-            <th>Subtotal</th>
+            <th class="totital">Subtotal</th>
             <td>Rs. 250,00,00</td>
           </tr>
 
           <tr>
-            <th>Total</th>
-            <td>Rs. 250,000,00</td>
+            <th class="totital">Total</th>
+            <td id="total-price">Rs. 250,000,00</td>
           </tr>
         </table>
 
@@ -409,27 +415,30 @@
           <div class="bank">
             <input type="radio" name="" id="bank-direct">
             <label for="bank-direct">Direct Bank Transer</label>
+            <p id="bank-pa">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+      
           </div>
 
-          <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
-      
+         
 
           <div class="emoney">
             <input type="radio" name="" id="wave-pay">
             <label for="wave-pay">Wave Money Pay</label>
+            
+          <p id="e-pa">Make your payment directly into our wave money account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+      
           </div>
 
-          <p>Make your payment directly into our wave money account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
-      
           
 
           <div class="cash">
             <input type="radio" name="" id="cash-on-deliver">
             <label for="cash-on-deliver">Cash On Delivery</label>
+            
+          <p id="cash-pa">Make your payment only after the items arrived to your home.</p>
+      
           </div>
 
-          <p>Make your payment only after the items arrived to your home.</p>
-      
           
 
           <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span>privacy policy</span>.</p>

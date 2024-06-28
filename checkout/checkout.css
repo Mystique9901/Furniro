@@ -13,4 +13,68 @@
 }
 .product-location h2, .product-location h4 {
   font-weight: 400;
+}
+
+.billing-section {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 100px;
+  gap: 100px;
+  justify-content: center;
+}
+.billing-section .billing-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.billing-section .billing-info .form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.billing-section .billing-info input {
+  border: 1px black solid;
+  border-radius: 10px;
+  height: 50px;
+}
+.billing-section .place-order {
+  flex: 1;
+}
+.billing-section .place-order table {
+  border-bottom: 1px rgba(0, 0, 0, 0.448) solid;
+  width: 100%;
+  font-size: 16px;
+}
+.billing-section .place-order table th, .billing-section .place-order table td {
+  height: 40px;
+}
+.billing-section .place-order table th {
+  text-align: start;
+}
+.billing-section .place-order table .title {
+  font-weight: 500;
+  font-size: 24px;
+}
+.billing-section .place-order table .totital {
+  font-weight: 500;
+}
+.billing-section .place-order table #total-price {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+.billing-section .place-order table .product span {
+  margin: 0px 10px;
+}
+.billing-section .checkout-type #bank-pa, .billing-section .checkout-type #e-pa, .billing-section .checkout-type #cash-pa {
+  display: none;
+}
+.billing-section .checkout-type #bank-direct:checked + label + #bank-pa {
+  display: block;
+}
+.billing-section .checkout-type #wave-pay:checked + label + #e-pa {
+  display: block;
+}
+.billing-section .checkout-type #cash-on-deliver:checked + label + #cash-pa {
+  display: block;
 }/*# sourceMappingURL=checkout.css.map */

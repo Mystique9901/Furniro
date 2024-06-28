@@ -27,3 +27,100 @@
         font-weight: 400;
     }
 }
+
+
+.billing-section{
+    @include flex-row();
+    padding: 0px 100px;
+    gap: 100px;
+    justify-content: center;
+
+
+
+    .billing-info{
+        flex:1 ;
+        @include flex-column();
+
+
+
+        .form{
+            @include flex-row();
+            gap:20px;
+        }
+
+        input {
+            border:1px black solid; 
+            border-radius: 10px;
+            height: 50px;
+        }
+    }
+
+
+
+    .place-order{
+
+        flex:1; 
+
+        
+        table {
+            border-bottom: 1px rgba(0, 0, 0, 0.448) solid;
+            width: 100%;
+
+            font-size: 16px;
+
+            th,td{
+                height: 40px;
+            }
+
+            th{
+                text-align: start;
+            }
+
+            .title{
+                font-weight: 500;
+                font-size: 24px;
+            }
+
+            .totital{
+                font-weight: 500;
+            }
+
+            #total-price{
+                font-weight: 700;
+                font-size: 24px;
+                color:var(--primary-color);
+            }
+
+            .product span {
+                margin:0px 10px;
+            }
+        }
+    }
+
+
+
+    .checkout-type{
+      
+
+        #bank-pa, #e-pa, #cash-pa{
+            display: none;
+        }
+
+        #bank-direct:checked +label + #bank-pa{
+            display: block;
+        }
+
+        #wave-pay:checked +label + #e-pa{
+            display: block;
+        }
+
+
+        #cash-on-deliver:checked +label + #cash-pa{
+            display: block;
+        }
+
+
+
+
+    }
+}
