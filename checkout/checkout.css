@@ -18,24 +18,44 @@
 .billing-section {
   display: flex;
   flex-direction: row;
-  padding: 0px 100px;
+  padding: 70px;
   gap: 100px;
   justify-content: center;
 }
 .billing-section .billing-info {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.billing-section .billing-info h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.billing-section .billing-info input, .billing-section .billing-info select {
+  border: 1px black solid;
+  height: 40px;
+  border-radius: 7px;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+.billing-section .billing-info form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.billing-section .billing-info .form-group {
   display: flex;
   flex-direction: column;
 }
-.billing-section .billing-info .form {
+.billing-section .billing-info .name-group {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-.billing-section .billing-info input {
-  border: 1px black solid;
-  border-radius: 10px;
-  height: 50px;
+.billing-section .billing-info .name-group .first-class, .billing-section .billing-info .name-group .last-class {
+  display: flex;
+  flex-direction: column;
 }
 .billing-section .place-order {
   flex: 1;
@@ -65,6 +85,24 @@
 }
 .billing-section .place-order table .product span {
   margin: 0px 10px;
+}
+.billing-section .checkout-type-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.billing-section .checkout-type-submit #bank-pa, .billing-section .checkout-type-submit #e-pa, .billing-section .checkout-type-submit #cash-pa {
+  color: rgba(0, 0, 0, 0.384);
+}
+.billing-section .checkout-type-submit #privacy {
+  font-weight: 500;
+}
+.billing-section .checkout-type-submit #order-btn {
+  border: 1px black solid;
+  width: 200px;
+  padding: 10px 8px;
+  border-radius: 15px;
 }
 .billing-section .checkout-type #bank-pa, .billing-section .checkout-type #e-pa, .billing-section .checkout-type #cash-pa {
   display: none;

@@ -29,37 +29,62 @@
 }
 
 
+
+
 .billing-section{
     @include flex-row();
-    padding: 0px 100px;
+    padding:70px;
     gap: 100px;
     justify-content: center;
 
 
-
     .billing-info{
-        flex:1 ;
+
         @include flex-column();
+       align-items: center;
+       gap:50px; 
+       
+
+       h2{
+        font-weight: 700;
+        font-size: 30px;
+       }
 
 
+        input , select {
+            border: 1px black solid; 
+            height: 40px;
+            border-radius: 7px;
 
-        .form{
+            margin-top: 10px;
+            padding: 5px 10px;
+
+        }
+
+        form{
+            @include flex-column();
+            gap:20px; 
+        }
+
+        .form-group{
+            @include flex-column();
+        }
+
+        .name-group{
             @include flex-row();
             gap:20px;
-        }
 
-        input {
-            border:1px black solid; 
-            border-radius: 10px;
-            height: 50px;
+            .first-class , .last-class{
+                @include flex-column();
+            }
         }
     }
-
 
 
     .place-order{
 
         flex:1; 
+        
 
         
         table {
@@ -98,6 +123,31 @@
     }
 
 
+    .checkout-type-submit{
+        @include flex-column(); 
+        align-items: center;
+        gap:50px;
+
+        #bank-pa, #e-pa, #cash-pa{
+            
+            color: rgba(0, 0, 0, 0.384); 
+        }
+
+        #privacy{
+            font-weight: 500;
+        }
+
+        #order-btn {
+            border: 1px black solid;
+            width: 200px;
+            padding: 10px 8px; 
+            
+            border-radius: 15px;
+        }
+
+    }
+  
+
 
     .checkout-type{
       
@@ -121,6 +171,23 @@
 
 
 
+        
+
+        
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

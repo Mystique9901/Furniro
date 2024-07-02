@@ -314,73 +314,86 @@
       </div>
     </section>
 
-    <!-- billing section  -->
     <section class="billing-section">
       <div class="billing-info">
         <h2>Billing details</h2>
 
-        <!-- name -->
-        <div class="form">
-          <div class="first-class">
-            <label for="first-name">First Name</label>
-          <input type="text" id="first-name" />
+        <form id="checkout-form">
+          <!-- name -->
+          <div class="form-group name-group">
+            <div class="first-class">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" />
+            </div>
+            <div class="last-class">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" />
+            </div>
           </div>
-          <div class="last-class">
-            
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" />
-          </div>
-          
-        </div>
-  
-        <!-- company  -->
-        <label for="company-name">Company Name(Optional)</label>
+          <!-- email -->
+          <div class="form-group">
+            <label for="company-name">Company Name(Optional)</label>
         <input type="text" id="company-name" />
-  
-        <!-- country  -->
-        <label for="region">Country/Region</label>
-        <select id="region" >
+          </div>
+          <!-- region -->
+          <div class="form-group">
+            <label for="region">Country/Region</label>
+        <select id="region">
           <option value="Sri lanko">Sri Lanko</option>
           <option value="Obbys">Obbys</option>
           <option value="SantHuu">SantHuu</option>
           <option value="Abd">Abd</option>
-        </select>
-  
-        <!-- Street address  -->
+          </select>
+          </div>
+          <!-- Street address  -->
+          <div class="form-group">
+            
         <label for="street-address">Street Address </label>
         <input type="text" id="street-address" />
-  
-  
-        <!-- Town/City  -->
-        <label for="town">Town/City  </label>
+          </div>
+           <!-- Town/City  -->
+          <div class="form-group">
+         
+        <label for="town">Town/City </label>
         <input type="text" id="town" />
-  
-  
-           <!-- Province  -->
-           <label for="province">Province</label>
-           <select id="province" >
-             <option value="Western Province">Western Province</option>
-             <option value="Blue Lake">Blue Lake</option>
-             <option value="Oh Su">Oh Su</option>
-             <option value="YaBe">YaBe</option>
-           </select>
-     
-  
-           
-        <!-- Zip code  -->
+          </div>
+            <!-- Province  -->
+          <div class="form-group">
+          
+        <label for="province">Province</label>
+        <select id="province">
+          <option value="Western Province">Western Province</option>
+          <option value="Blue Lake">Blue Lake</option>
+          <option value="Oh Su">Oh Su</option>
+          <option value="YaBe">YaBe</option>
+        </select>
+          </div>
+           <!-- Zip code  -->
+          <div class="form-group">
+            
         <label for="zip-code">ZIP Code</label>
         <input type="number" id="zip-code" />
-  
-         <!-- phone number   -->
-         <label for="phone">Phone Number</label>
-         <input type="number" id="phone" />
-  
-  
+          </div>
+          <!-- phone number   -->
+          <div class="form-group">
+             
+        <label for="phone">Phone Number</label>
+        <input type="number" id="phone" />
+          </div>
           <!-- email address  -->
-          <label for="email">Email Address</label>
-          <input type="email" id="email" />
-          <input type="text" id="additional-info" value="Additional Information"/>
-   
+          <div class="form-group">
+            
+        <label for="email">Email Address</label>
+        <input type="email" id="email" />
+        <input
+          type="text"
+          id="additional-info"
+          value="Additional Information"
+        />
+          </div>
+         
+
+        </form>
       </div>
 
       <div class="place-order">
@@ -390,12 +403,12 @@
             <th class="title">Subtotal</th>
           </tr>
           <tr>
-            <td><div class="product">
-              Asgaard sofa <span>
-                x
-              </span>
-              <span id="product-quantity">1</span>
-            </div></td>
+            <td>
+              <div class="product">
+                Asgaard sofa <span> x </span>
+                <span id="product-quantity">1</span>
+              </div>
+            </td>
 
             <td>Rs. 250,000.00</td>
           </tr>
@@ -410,45 +423,55 @@
           </tr>
         </table>
 
-        <div class="checkout-type">
-
-          <div class="bank">
-            <input type="radio" name="" id="bank-direct">
-            <label for="bank-direct">Direct Bank Transer</label>
-            <p id="bank-pa">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
-      
-          </div>
-
-         
-
-          <div class="emoney">
-            <input type="radio" name="" id="wave-pay">
-            <label for="wave-pay">Wave Money Pay</label>
+        <div class="checkout-type-submit">
+          <div class="checkout-type">
+            <div class="bank">
+              <input type="radio" name="check-type" id="bank-direct" />
+              <label for="bank-direct">Direct Bank Transer</label>
+              <p id="bank-pa">
+                Make your payment directly into our bank account. Please use your
+                Order ID as the payment reference. Your order will not be shipped
+                until the funds have cleared in our account.
+              </p>
+            </div>
+  
+            <div class="emoney">
+              <input type="radio" name="check-type" id="wave-pay" />
+              <label for="wave-pay">Wave Money Pay</label>
+  
+              <p id="e-pa">
+                Make your payment directly into our wave money account. Please use
+                your Order ID as the payment reference. Your order will not be
+                shipped until the funds have cleared in our account.
+              </p>
+            </div>
+  
+            <div class="cash">
+              <input type="radio" name="check-type" id="cash-on-deliver" />
+              <label for="cash-on-deliver">Cash On Delivery</label>
+  
+              <p id="cash-pa">
+                Make your payment only after the items arrived to your home.
+              </p>
+            </div>
+  
+            <p >
+              Your personal data will be used to support your experience
+              throughout this website, to manage access to your account, and for
+              other purposes described in our <a id="privacy" href="#">privacy policy</a>.
+            </p>
+  
             
-          <p id="e-pa">Make your payment directly into our wave money account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
-      
-          </div>
-
-          
-
-          <div class="cash">
-            <input type="radio" name="" id="cash-on-deliver">
-            <label for="cash-on-deliver">Cash On Delivery</label>
             
-          <p id="cash-pa">Make your payment only after the items arrived to your home.</p>
-      
           </div>
 
-          
-
-          <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span>privacy policy</span>.</p>
-        
-
-          <div class="place-order-btn">Place order</div>
+          <input type="submit" id="order-btn" value="Place Order">
         </div>
+        
       </div>
- 
     </section>
+
+   
 
     <!-- service section -->
     <section class="service-section row-flex">
