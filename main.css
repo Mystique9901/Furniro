@@ -327,10 +327,12 @@ nav ul a:hover {
   align-items: center;
 }
 
-.icon-item h5 {
+.icon-item , .compare-link  {
   color: var(--white-bg);
   font-size: 16px;
 }
+
+
 
 /* while hovering */
 
@@ -629,6 +631,14 @@ a {
     height: 30px;
   }
 
+  /* .cart-page .cart-slider{
+    width: 70%;
+  } */
+
+  .menu1{
+    /* margin-top: 50px; */
+    width: 70%;
+  }
 
   .footer-link{
     flex-direction: column;
