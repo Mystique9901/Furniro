@@ -115,4 +115,18 @@
 }
 .billing-section .checkout-type #cash-on-deliver:checked + label + #cash-pa {
   display: block;
+}
+
+@media only screen and (max-width: 1008px) {
+  .billing-section {
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .billing-section .billing-info {
+    gap: 20px;
+  }
+  .billing-section .billing-info .form-group {
+    padding: 5px 15px;
+  }
 }/*# sourceMappingURL=checkout.css.map */

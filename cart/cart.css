@@ -69,4 +69,19 @@
   font-weight: 500;
   font-size: 20px;
   border-radius: 20px;
+}
+
+@media only screen and (max-width: 1008px) {
+  .product-cart-section {
+    padding: 50px;
+  }
+  .product-cart-section .product-checkout-con {
+    padding: 15px 30px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .product-cart-section {
+    flex-direction: column;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=cart.css.map */

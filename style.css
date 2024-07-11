@@ -557,4 +557,26 @@
   .inner-text-div h4 {
     font-size: 15px;
   }
+
+  .browse-section .browse-img {
+    flex-direction: row;
+    gap:5px;
+  }
+
+
+  .beautiful-inspo-section .inspo-text-con h3{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .beautiful-inspo-section .inspo-text-con {
+    gap:20px;
+  }
+
+  .beautiful-inspo-section .inspo-text-con .inspo-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
 }

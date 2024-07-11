@@ -9,6 +9,7 @@
     flex-direction: column;
 }
 
+
 .product-location{
     background-image: url(../img/product_compare_bg.png);
 
@@ -178,6 +179,27 @@
     }
 }
 
+
+
+@media only screen and (max-width: 1008px)  {
+
+    .billing-section{
+       gap:20px;
+        padding:20px;
+        flex-direction: column;
+
+        .billing-info{
+            gap:20px;
+            
+
+           .form-group{
+           padding:5px 15px;
+           }
+        }
+    }
+
+    
+}
 
 
 
